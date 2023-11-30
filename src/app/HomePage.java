@@ -11,7 +11,6 @@ public class HomePage extends JFrame{
     private JButton resepButton;
     private JButton nonResepButton;
     private JButton logoutButton;
-
     public HomePage(){
         setContentPane(HomePanel);
         setTitle("Home");

@@ -17,7 +17,6 @@ public class Pembeli extends Apoteker{
     public String getUsername() {
        return username;
     }
-
     public String getPassword(){
         return password;
     }
@@ -46,14 +45,11 @@ public class Pembeli extends Apoteker{
             }
         }
     }
-
-
     private void resep(){
         List<String> resepDokter = new ArrayList<>();
 
         System.out.println("Masukan nama obat dari resep dokter " +
                 "dan ketik 'selesai' jika sudah");
-
         while (isRunning) {
             System.out.print("\nnama obat : ");
             String namaObat = scanner.nextLine();
@@ -82,7 +78,6 @@ public class Pembeli extends Apoteker{
     }
     private void nonResep() {
         List<String> dataKeluhan = new ArrayList<>();
-
         System.out.println("Masukan nama obat dari resep dokter " +
                 "dan ketik 'selesai' jika sudah");
         List<String> obat = new ArrayList<>();

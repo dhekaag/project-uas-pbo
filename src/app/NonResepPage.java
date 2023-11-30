@@ -30,6 +30,7 @@ public class NonResepPage extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);
+
         cekObatButton.addActionListener(new ActionListener() {
 
             @Override

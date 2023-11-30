@@ -30,6 +30,4 @@ public class DataObat {
             "simvastatin","15,000"
     )
     );
-
-
 }

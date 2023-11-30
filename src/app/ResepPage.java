@@ -17,21 +17,17 @@ public class ResepPage extends JFrame{
     private JTextPane obatTersediaTextPane;
     private JButton cekObatButton;
     private JButton pembayaranButton;
-
     private final DataObat data = new DataObat();
     private final Apoteker apoteker = new Apoteker();
     private final List<String> resepDokter = new ArrayList<>();
-
-
     public ResepPage(){
-        JFrame frame = new JFrame();
+        setContentPane(ResepPanel);
+        setTitle("Resep");
+        setSize(800,600);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+        setLocationRelativeTo(null);
 
-        frame.setContentPane(ResepPanel);
-        frame.setTitle("Resep");
-        frame.setSize(800,600);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
-        frame.setLocationRelativeTo(null);
         obatTersediaTextPane.addContainerListener(new ContainerAdapter() {
             @Override
             public void componentAdded(ContainerEvent e) {

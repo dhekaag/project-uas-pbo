@@ -11,7 +11,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class AuthPage extends JFrame{
-
     private JLabel imageLogo;
     private JPanel AuthPanel;
     private JTextField usernameTextField;
